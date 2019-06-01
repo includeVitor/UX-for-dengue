@@ -3,7 +3,7 @@
 	<div class="row mt-5">
 
 		<div class="col-md-12">
-			<h1 class="text-center font-weight-light">Coleta de dados</h4>
+			<h1 class="text-center font-weight-light">Coleta de dados</h1>
 		</div>
 
 	</div>

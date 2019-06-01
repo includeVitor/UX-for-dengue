@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
     <div class="col-md-12 mt-2">
-        <h1 class="text-center font-weight-light">Perfil do Usuário</h4>
+        <h1 class="text-center font-weight-light">Perfil do Usuário</h1>
     </div>
     
     <ul class="nav nav-tabs mt-5" id="userProfile" role="tablist">
@@ -114,7 +114,7 @@
             <div class="row mt-3">
                 <div class="col-12">
 
-                    <label>A ingetão de algum tipo de substancia inclusive água provoca vômitos?</label>
+                    <label>A ingestão de algum tipo de substancia inclusive água provoca vômitos?</label>
 
                     <div class="col-10">
                         <select class="form-control" id="userProfileQ3">

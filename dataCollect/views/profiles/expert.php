@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
     <div class="col-md-12 mt-2">
-        <h1 class="text-center font-weight-light">Perfil do Especialista</h4>
+        <h1 class="text-center font-weight-light">Perfil do Especialista</h1>
     </div>
 
 
@@ -143,7 +143,7 @@
             <div class="row mt-3">
                 <div class="col-12">
 
-                    <label>O paciente apresenta um aumento do tamanho do fígado (Hepatomegalia dolorosa) ?</label>
+                    <label>O paciente apresenta um aumento do tamanho do fígado (Hepatomegalia dolorosa)?</label>
 
                     <div class="col-10">
                         <select class="form-control" id="expertProfileQ2">

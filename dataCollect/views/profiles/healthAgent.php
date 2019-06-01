@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
     <div class="col-md-12 mt-2">
-        <h1 class="text-center font-weight-light">Perfil do Agente de saúde</h4>
+        <h1 class="text-center font-weight-light">Perfil do Agente de saúde</h1>
     </div>
 
 
@@ -161,7 +161,7 @@
             <div class="row mt-3">
                 <div class="col-12">
 
-                    <label> Reside em local sem saneamento básico?</label>
+                    <label>Reside em local sem saneamento básico?</label>
 
                     <div class="col-10">
                         <select class="form-control" id="healthAgentProfileQ2">
