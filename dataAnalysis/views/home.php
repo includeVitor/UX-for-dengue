@@ -54,7 +54,7 @@
 						text-left">
 
 				<i class="fas fa-robot fa-5x"></i>
-				<label>Pass throught</label>
+				<label>Pass through</label>
 
 			</div>
 			

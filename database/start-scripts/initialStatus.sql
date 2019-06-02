@@ -1,0 +1,2 @@
+insert into status (name, description) values ("PENDENTE", "Após as informações chegarem da coleta de dados elas aguardam a averiguação do especialista no status [ PENDENTE ]"); 
+insert into status (name, description) values ("CONCLUÍDO", "Após o especialista analisar as informações e dar o feedback o status ficará [ CONCLUÍDO ] ");
