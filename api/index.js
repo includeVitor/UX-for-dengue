@@ -172,13 +172,13 @@ router.post('/dengueAnalysis', (req, res) =>{
     if(req.body.currentDate){
         const currentDate = req.body.currentDate;
         additionInputDescription += "CURRENTDATE,";
-        additionInputValue += `${currentDate},`;
+        additionInputValue += `'${currentDate}',`;
     }
 
     if(req.body.currentTime){
         const currentTime = req.body.currentTime;
         additionInputDescription += "CURRENTTIME,";
-        additionInputValue += `${currentTime},`;
+        additionInputValue += `'${currentTime}',`;
     }
 
     if(req.body.heartBeat){
@@ -190,7 +190,7 @@ router.post('/dengueAnalysis', (req, res) =>{
     if(req.body.bloodPressure){
         const bloodPressure = req.body.bloodPressure;
         additionInputDescription += "BLOODPRESSURE,";
-        additionInputValue += `${bloodPressure},`;
+        additionInputValue += `'${bloodPressure}',`;
     }
 
     if(req.body.symptoms){
@@ -290,7 +290,7 @@ router.get('/healthAgentProfile/:id?', (req, res) =>{
 
   execSQLQuery(
     `SELECT * 
-      FROM userProfile 
+      FROM healthAgentProfile 
       ${filter}`, res);
 })
 
@@ -327,7 +327,7 @@ console.log('API funcionando!');
 
 
 function execSQLQuery(sqlQry, res, type = 1){
-
+  
   const connection = mysql.createConnection({
     host:'localhost',
     port:'3306',

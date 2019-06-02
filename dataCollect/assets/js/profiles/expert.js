@@ -36,6 +36,8 @@ const typeanalysis = 3; // Expert
             var heartBeat = $("#heart-beat");
             var bloodPressure = $("#blood-pressure");
             var symptoms = $("#symptoms");
+            var currentDate = $("#current-date");
+            var currentTime = $("#current-time");
             var expertProfileQ1 = $("#expertProfileQ1");
             var expertProfileQ2 = $("#expertProfileQ2");
             var expertProfileQ3 = $("#expertProfileQ3");
@@ -51,13 +53,15 @@ const typeanalysis = 3; // Expert
                 status: status,
                 typeanalysis: typeanalysis,
                 SUS_ID: SUS_ID.val(),
-                age: age.maskMoney('unmasked')[0],
+                age: (age.maskMoney('unmasked')[0]* 100),
                 weight: weight.maskMoney('unmasked')[0],
                 height: height.maskMoney('unmasked')[0],
                 temperature: temperature.maskMoney('unmasked')[0],
-                heartBeat: heartBeat.maskMoney('unmasked')[0],
+                heartBeat: ( heartBeat.maskMoney('unmasked')[0] * 1000),
                 bloodPressure: bloodPressure.val(),
                 symptoms: `'${symptoms.val()}'`,
+                currentDate: `${currentDate.val()}`,
+                currentTime: `${currentTime.val()}`,
                 question1: expertProfileQ1.val(),
                 question2: expertProfileQ2.val(),
                 question3: expertProfileQ3.val(),
@@ -69,7 +73,7 @@ const typeanalysis = 3; // Expert
               }
             ).done(function(){
                 alert("dados enviados com sucesso");
-                window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
+                //window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
             });
 
           }

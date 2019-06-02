@@ -140,10 +140,10 @@
                 <div class="row mt-3">
                     <div class="col-md-12">
                         <ol>
-                            <li class="mt-2">Apresenta algum tipo de sangramento, vias respiratórias e/ou sistema digestivo? Não sei</li>
-                            <li class="mt-2">Está com dificuldade de se manter alerta apresentando sonolência e/ou irritabilidade? Não sei</li>
-                            <li class="mt-2">Reside em local sem saneamento básico? Não sei</li>
-                            <li class="mt-2">Localidade possuí coleta de lixo regular? Não sei</li>
+                            <li class="mt-2">Apresenta algum tipo de sangramento, vias respiratórias e/ou sistema digestivo?: <span id="healthAgentProfileq1"></span></li>
+                            <li class="mt-2">Está com dificuldade de se manter alerta apresentando sonolência e/ou irritabilidade?: <span id="healthAgentProfileq2"></span> </li>
+                            <li class="mt-2">Reside em local sem saneamento básico?: <span id="healthAgentProfileq3"></span> </li>
+                            <li class="mt-2">Localidade possuí coleta de lixo regular?: <span id="healthAgentProfileq4"></span> </li>
                         </ol>
                     </div>
                 </div>
@@ -162,21 +162,21 @@
                 <div class="row mt-3">
                     <div class="col-md-12 ">
                         <ol>
-                            <li class="mt-2">Paciente apresenta queda abrupta de plaquetas? Não sei</li>
-                            <li class="mt-2">O paciente apresenta um aumento do tamanho do fígado (Hepatomegalia dolorosa)? Não sei</li>
-                            <li class="mt-2">O paciente apresenta dificuldade de manter a temperatura corpórea? Não sei</li>
-                            <li class="mt-2">O exame do hemograma encontra-se alterado? Não sei</li>
-                            <li class="mt-2">O paciente não consegue ficar em ortostase? Não sei</li>
-                            <li class="mt-2">Existe algum desequilíbrio proporcional de água e células sanguíneas (hermatócrito)? Não sei</li>
-                            <li class="mt-2">Apresenta diminuição de diurese? Não sei</li>
-                            <li class="mt-2">O exame de sorologia encontra-se alterado? Não sei</li>
+                            <li class="mt-2">Paciente apresenta queda abrupta de plaquetas?: <span id="expertProfileq1"> </li>
+                            <li class="mt-2">O paciente apresenta um aumento do tamanho do fígado (Hepatomegalia dolorosa)?: <span id="expertProfileq2"> </li>
+                            <li class="mt-2">O paciente apresenta dificuldade de manter a temperatura corpórea?: <span id="expertProfileq3"> </li>
+                            <li class="mt-2">O exame do hemograma encontra-se alterado?: <span id="expertProfileq4"> </li>
+                            <li class="mt-2">O paciente não consegue ficar em ortostase?: <span id="expertProfileq5"> </li>
+                            <li class="mt-2">Existe algum desequilíbrio proporcional de água e células sanguíneas (hermatócrito)?: <span id="expertProfileq6"> </li>
+                            <li class="mt-2">Apresenta diminuição de diurese?: <span id="expertProfileq7"> </li>
+                            <li class="mt-2">O exame de sorologia encontra-se alterado?: <span id="expertProfileq8"> </li>
                         </ol>
                     </div>
                 </div>
                 
             </div>
 
-            <div id="Accept">
+            <div id="Accept-send">
                
             </div>
 
@@ -252,4 +252,3 @@
 
 </div>
 
-<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/decisions/specialistDecision.js"></script>

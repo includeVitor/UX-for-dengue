@@ -149,8 +149,8 @@
                     <div class="row mt-3">
 
                         <div class="col-12">
-                            <label for="current-date">Latitude</label>
-                            <input type="text" id="current-date" class="form-control">
+                            <label>Latitude</label>
+                            <input type="text" class="form-control">
                         </div>   
 
                     </div>
@@ -158,8 +158,8 @@
                     <div class="row mt-3">
 
                         <div class="col-12">
-                            <label for="current-date">Longitude</label>
-                            <input type="text" id="current-date" class="form-control">
+                            <label>Longitude</label>
+                            <input type="text"  class="form-control">
                         </div>   
 
                     </div>

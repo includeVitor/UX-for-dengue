@@ -25,11 +25,56 @@
 
             <form>
 
-                <div class="row mt-5">
+                <div class="row mt-3 d-none" id="hasId">
+                    <div class="col-12">
+                        <div class="alert alert-success" role="alert">
+                            Identificação encontrada
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 d-none" id="notFoundId">
+                    <div class="col-12">
+                        <div class="alert alert-warning" role="alert">
+                            Identificação inexistente
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-12 d-none">
+                        <div class="alert alert-warning" role="alert">
+                            Não foi possível procurar uma identificação,
+                            o problema pode ser o servidor ou a sua conexão
+                            com internet
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-3 d-none" id="noId">
 
                     <div class="col-12">
+                        <div class="alert alert-warning" role="alert">
+                            Preencha uma Identificação para efetuar a busca
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5">
+
+                    <div class="col-6">
                         <label for="SUS_ID">Identificação</label>
-                        <input type="text" id="SUS_ID" class="form-control">
+                        <input type="text" id="SUS_ID" class="form-control" maxlength="8">
+                    </div>  
+
+                    <div class="col-6" style="margin-top:33px">
+                        <button class="btn btn-info" type="button" id="search" >
+                            <span id="Spinner"></span>
+                            <i class="fas fa-search"></i> Pesquisar
+                        </button>
                     </div>  
 
                 </div>
@@ -66,22 +111,14 @@
 
             <div class="row mt-3">
 
-                <div class="col-6">
-                    <label>Idade</label>                
-                </div>
-                <div class="col-6">
-                    <label>Peso</label>                
+                <div class="col-6 ">
+                    <label>Idade:</label> 
+                    <input type="text" id="age" class="form-control text-right" disabled>               
                 </div>
 
-            </div>
-
-            <div class="row mt-3">
-
                 <div class="col-6">
-                    <label>Altura</label>                
-                </div>
-                <div class="col-6">
-                    <label>Temperatura</label>                
+                    <label>Peso</label>    
+                    <input type="text" id="weight" class="form-control text-right" disabled>                           
                 </div>
 
             </div>
@@ -89,10 +126,12 @@
             <div class="row mt-3">
 
                 <div class="col-6">
-                    <label>Pulso</label>                
+                    <label>Altura</label>   
+                    <input type="text" id="height" class="form-control text-right" disabled>              
                 </div>
                 <div class="col-6">
-                    <label>Pressão</label>                
+                    <label>Temperatura</label>
+                    <input type="text" id="temperature" class="form-control text-right" disabled>                 
                 </div>
 
             </div>
@@ -100,32 +139,38 @@
             <div class="row mt-3">
 
                 <div class="col-6">
-                    <label>Data</label>                
+                    <label>Pulso Cardiaco</label>
+                    <input type="text" id="heart-beat" class="form-control text-right" disabled>                 
                 </div>
                 <div class="col-6">
-                    <label>Hora</label>                
+                    <label>Pressão Sanguínea</label>    
+                    <input type="text" id="blood-pressure" class="form-control text-right" disabled>                    
                 </div>
 
             </div>
 
             <div class="row mt-3">
+
+                <div class="col-6">
+                    <label>Data</label>
+                    <input type="date" id="current-date" class="form-control text-right" disabled>                        
+                </div>
+                <div class="col-6">
+                    <label>Hora</label>           
+                    <input type="text" id="current-time" class="form-control text-right" disabled>     
+                </div>
+
+            </div>
+
+            <div class="row mt-3 mb-5">
 
                 <div class="col-12">
-                    <label>Sintomas</label>                
+                    <label><b>Sintomas:</b> </label>   
+                    <span id="symptoms"></span>           
                 </div>
-              
-            </div>
 
-            <div class="row mt-3 mb-3">
-
-                <div class="col-12">
-                    <label>Endereço</label>                
-                </div>
-              
-            </div>
-
+            </div>  
            
-
         </div>
 
     </div>

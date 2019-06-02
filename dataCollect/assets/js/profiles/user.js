@@ -51,7 +51,7 @@ const typeanalysis = 1; // Usuário
               }
             ).done(function(){
               alert("dados enviados com sucesso");
-              //window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
+              window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
             });
 
           }
