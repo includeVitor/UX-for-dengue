@@ -6,9 +6,20 @@ $(function() {
     temperature("#temperature");
     heartBeat("#heart-beat");
 
-    let today =  new Date();
-    $("#current-date").val(today.toJSON().slice(0,10));
-    $("#current-time").val(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
+    $("#next").click(
+      () =>
+      {
+        $('#expertProfile li:nth-child(2) a').tab('show');
+      }
+    )
+
+    $("#back").click(
+      () =>
+      {
+        $('#expertProfile li:nth-child(1) a').tab('show');
+      }
+    )
+
 });
 
 const status = 1; // Pendente 
@@ -60,8 +71,6 @@ const typeanalysis = 3; // Expert
                 heartBeat: ( heartBeat.maskMoney('unmasked')[0] * 1000),
                 bloodPressure: bloodPressure.val(),
                 symptoms: `'${symptoms.val()}'`,
-                currentDate: `${currentDate.val()}`,
-                currentTime: `${currentTime.val()}`,
                 question1: expertProfileQ1.val(),
                 question2: expertProfileQ2.val(),
                 question3: expertProfileQ3.val(),
@@ -73,7 +82,7 @@ const typeanalysis = 3; // Expert
               }
             ).done(function(){
                 alert("dados enviados com sucesso");
-                //window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
+                window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
             });
 
           }

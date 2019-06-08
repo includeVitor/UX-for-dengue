@@ -5,6 +5,20 @@ $(function() {
   height("#height");
   temperature("#temperature")
 
+  $("#next").click(
+    () =>
+    {
+      $('#userProfile li:nth-child(2) a').tab('show');
+    }
+  )
+
+  $("#back").click(
+    () =>
+    {
+      $('#userProfile li:nth-child(1) a').tab('show');
+    }
+  )
+
 });
 
 const status = 1; // Pendente 

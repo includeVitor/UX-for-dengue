@@ -1,0 +1,23 @@
+.btn-user{
+    color: #fff;
+    background-color: #87CEFA;
+    border-color: #87CEFA;
+}
+
+.btn-health-agent{
+    color: #fff;
+    background-color:  #00BFFF;
+    border-color:  #00BFFF;
+}
+
+.btn-expert{
+    color: #fff;
+    background-color:  #1E90FF;
+    border-color:  #1E90FF;
+}
+
+.hr-user{
+    width: 85%;
+    border: 2px solid gray;
+    border-radius: "5px";
+}

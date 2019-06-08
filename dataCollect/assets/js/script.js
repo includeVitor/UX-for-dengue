@@ -7,8 +7,8 @@ function age(id){
         thousands: '',
         decimal:'',
         allowZero:false,
-        precision:0,
-        suffix: '  ANOS'});
+        precision:0
+        });
 }
 
 function weight(id){
@@ -17,8 +17,8 @@ function weight(id){
         thousands: '',
         decimal:',',
         allowZero:false,
-        precision:1,
-        suffix: '  KG'});
+        precision:1
+        });
 }
 
 function height(id){
@@ -27,8 +27,8 @@ function height(id){
         thousands: '',
         decimal:',',
         allowZero:false,
-        precision:1,
-        suffix: '  METROS'});
+        precision:2
+        });
 }
 
 function temperature(id){
@@ -37,8 +37,8 @@ function temperature(id){
         thousands: '',
         decimal:',',
         allowZero:false,
-        precision:1,
-        suffix: '  Cº'});
+        precision:1
+        });
 }
 
 function heartBeat(id){
@@ -47,6 +47,6 @@ function heartBeat(id){
         thousands: '',
         decimal:',',
         allowZero:false,
-        precision:0,
-        suffix: '  BPM'});
+        precision:0
+        });
 }

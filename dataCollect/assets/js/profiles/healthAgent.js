@@ -6,9 +6,21 @@ $(function() {
     temperature("#temperature");
     heartBeat("#heart-beat");
 
-    let today =  new Date();
-    $("#current-date").val(today.toJSON().slice(0,10));
-    $("#current-time").val(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds());
+    $("#next").click(
+      () =>
+      {
+        $('#healthAgentProfile li:nth-child(2) a').tab('show');
+      }
+    )
+
+    $("#back").click(
+      () =>
+      {
+        $('#healthAgentProfile li:nth-child(1) a').tab('show');
+      }
+    )
+
+
 });
 
 const status = 1; // Pendente 
@@ -36,8 +48,6 @@ const typeanalysis = 2; // Health Agent
             var heartBeat = $("#heart-beat");
             var bloodPressure = $("#blood-pressure");
             var symptoms = $("#symptoms");
-            var currentDate = $("#current-date");
-            var currentTime = $("#current-time");
             var healthAgentProfileQ1 = $("#healthAgentProfileQ1");
             var healthAgentProfileQ2 = $("#healthAgentProfileQ2");
             var healthAgentProfileQ3 = $("#healthAgentProfileQ3");
@@ -56,8 +66,6 @@ const typeanalysis = 2; // Health Agent
                 heartBeat: (heartBeat.maskMoney('unmasked')[0] * 1000),
                 bloodPressure: bloodPressure.val(),
                 symptoms: `'${symptoms.val()}'`,
-                currentDate: `${currentDate.val()}`,
-                currentTime: `${currentTime.val()}`,
                 question1: healthAgentProfileQ1.val(),
                 question2: healthAgentProfileQ2.val(),
                 question3: healthAgentProfileQ3.val(),
@@ -65,7 +73,7 @@ const typeanalysis = 2; // Health Agent
               }
             ).done(function(){
                 alert("dados enviados com sucesso");
-                //window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
+                window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
             });
 
           }

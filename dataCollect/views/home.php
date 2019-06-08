@@ -13,7 +13,7 @@
 		<a class="col-md-12" href="userProfile/">
 
 			<div class="btn
-						btn-secondary
+						btn-user
 						col-md-12
 						text-left" >
 
@@ -31,7 +31,7 @@
 		<a class="col-md-12" href="healthAgentProfile/">
 
 			<div class="btn 
-						btn-info
+						btn-health-agent
 						col-md-12
 						text-left">
 
@@ -49,7 +49,7 @@
 		<a class="col-md-12" href="expertProfile/">
 
 			<div class="btn
-						btn-primary
+						btn-expert
 						col-md-12
 						text-left">
 

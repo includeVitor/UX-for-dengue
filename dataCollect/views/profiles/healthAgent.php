@@ -1,19 +1,25 @@
 <div class="container-fluid">
 
-    <div class="col-md-12 mt-2">
-        <h1 class="text-center font-weight-light">Perfil do Agente de saúde</h1>
+    <div class="col-md-12 mt-2 text-center">
+        <h1 class="font-weight-light fas fa-address-card"> Análise Agente de Saúde</h1>
+    </div>
+    <hr class="hr-user">
+
+    <div class="row mt-4">
+        <div class="col-12 text-left">
+            <a href="/Ux-for-dengue/dataCollect"><i class="fas fa-home btn btn-health-agent btn-lg"></i></a>
+        </div>
     </div>
 
-
-    <ul class="nav nav-tabs mt-5" id="healthAgentProfile" role="tablist">
+    <ul class="nav nav-tabs mt-4" id="healthAgentProfile" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="initial-data-tab" data-toggle="tab" href="#initial-data" role="tab" aria-controls="initial-data" aria-selected="true">
-                <i class="fas fa-exclamation"></i>
+                <i class="fas fa-database"> Dados</i>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="health-agent-report-tab" data-toggle="tab" href="#health-agent-report" role="tab" aria-controls="health-agent-report" aria-selected="false">
-                <i class="fas fa-question"></i>
+                <i class="fas fa-question"> Perguntas</i>
             </a>
         </li>
     </ul>
@@ -29,8 +35,8 @@
                     <div class="row mt-3">
 
                         <div class="col-12">
-                            <label for="SUS_ID">Identificação</label>
-                            <input type="text" id="SUS_ID" class="form-control text-right" maxlength="8" placeholder="Exemplo: 30" required>
+                            <label for="SUS_ID">Número do SUS</label>
+                            <input type="text" id="SUS_ID" class="form-control" maxlength="8" placeholder="Exemplo: 30" required>
                             
                             <div class="valid-feedback">
                                 Preenchido  
@@ -47,8 +53,8 @@
                     <div class="row mt-3">
 
                         <div class="col-6">
-                            <label for="age">Idade</label>
-                            <input type="text" id="age" class="form-control text-right" maxlength="9" placeholder="Exemplo: 18 anos" required>
+                            <label for="age">Idade*</label>
+                            <input type="text" id="age" class="form-control text-right" maxlength="3" placeholder="Exemplo: 18 anos" required>
 
                             <div class="valid-feedback">
                                 Preenchido  
@@ -60,8 +66,8 @@
                         </div>    
 
                         <div class="col-6">
-                            <label for="weight">Peso</label>
-                            <input type="text" id="weight" class="form-control text-right" maxlength="9" placeholder="Exemplo: 80 kg" required>
+                            <label for="weight">Peso (KG)*</label>
+                            <input type="text" id="weight" class="form-control text-right" maxlength="5" placeholder="Exemplo: 80 kg" required>
                             
                             <div class="valid-feedback">
                                 Preenchido  
@@ -77,8 +83,8 @@
                     <div class="row mt-3">
 
                         <div class="col-6">
-                            <label for="height">Altura</label>
-                            <input type="text" id="height" class="form-control text-right" maxlength="4" placeholder="Exemplo: 1,7 m" required>
+                            <label for="height">Altura (M)*</label>
+                            <input type="text" id="height" class="form-control text-right" maxlength="4" placeholder="Exemplo: 1,65 m" required>
                             
                             <div class="valid-feedback">
                                 Preenchido  
@@ -91,8 +97,8 @@
                         </div>   
 
                         <div class="col-6">
-                            <label for="temperature">Temperatura</label>
-                            <input type="text" id="temperature" class="form-control text-right" maxlength="8" placeholder="Exemplo: 34 °C" required>
+                            <label for="temperature">Temperatura (°C)*</label>
+                            <input type="text" id="temperature" class="form-control text-right" maxlength="4" placeholder="Exemplo: 34 °C" required>
 
                             <div class="valid-feedback">
                                 Preenchido  
@@ -109,8 +115,8 @@
                     <div class="row mt-3">
 
                         <div class="col-6">
-                            <label for="heart-beat">Pulso Cardiaco</label>
-                            <input type="text" id="heart-beat" class="form-control text-right" maxlength="8" placeholder="Exemplo: 60 bpm" required>
+                            <label for="heart-beat">Pulso Cardiaco (BPM)*</label>
+                            <input type="text" id="heart-beat" class="form-control text-right" maxlength="3" placeholder="Exemplo: 60 bpm" required>
                             
                             <div class="valid-feedback">
                                 Preenchido  
@@ -123,7 +129,7 @@
                         </div>   
 
                         <div class="col-6">
-                            <label for="blood-pressure">Pressão Sanguínea</label>
+                            <label for="blood-pressure">Pressão Sanguínea*</label>
                             <input type="text" id="blood-pressure" class="form-control text-right" maxlength="4" placeholder="Exemplo: 12" required>
 
                             <div class="valid-feedback">
@@ -138,44 +144,11 @@
 
                     </div>
 
-                    <div class="row mt-3">
-
-                        <div class="col-6">
-                            <label for="current-date">Data</label>
-                            <input type="date" id="current-date" class="form-control" disabled>
-                        </div>   
-
-                        <div class="col-6">
-                            <label for="current-time">Hora</label>
-                            <input type="text" id="current-time" class="form-control" disabled>
-                        </div>    
-
-                    </div>
-
-                    <div class="row mt-3">
-
-                        <div class="col-12">
-                            <label >Latitude</label>
-                            <input type="text" class="form-control">
-                        </div>   
-
-                    </div>
-
-                    <div class="row mt-3">
-
-                        <div class="col-12">
-                            <label >Longitude</label>
-                            <input type="text" class="form-control">
-                        </div>   
-
-                    </div>
-
-
                     <div class="row mt-3 mb-3">
 
                         <div class="col-12">
                             <label for="symptoms">Sintomas</label>
-                            <textarea id="symptoms" class="form-control" rows="3" placeholder="Exemplo: Dor de cabeça" required></textarea>
+                            <textarea id="symptoms" class="form-control" rows="3" placeholder="Exemplo: Dor de cabeça, olhos ardendo" required></textarea>
 
                             <div class="valid-feedback">
                                 Preenchido  
@@ -189,10 +162,9 @@
 
                     </div>
 
-                    <div class="row mt-3 mb-3">
-                        
+                    <div class="row mt-3 mb-3">              
                         <div class="col-12 text-right">
-                            <button type="button" class="btn btn-primary" href="#health-agent-report"  data-toggle="tab">Próximo</button>
+                            <i id="next" class="fas fa-angle-right btn btn-health-agent fa-2x"></i>
                         </div>
                     </div>
 
@@ -306,18 +278,17 @@
                 </div>
 
                 <div class="row mt-3 mb-3">
-                        
-                    <div class="col-12 text-left">
-                        <button type="button" class="btn btn-outline-primary">Voltar</button>
-                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="fas fa-paper-plane btn btn-health-agent btn-block btn-lg"> Enviar dados</button>
+                    </div>  
+
                 </div>
 
                 <div class="row mt-3 mb-3">
-
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar dados</button>
-                    </div>  
-
+                    <div class="col-2">
+                        <i id="back" class="fas fa-angle-left btn btn-health-agent fa-2x"></i>
+                    </div>
                 </div>
 
             </div>
