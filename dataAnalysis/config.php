@@ -3,7 +3,7 @@ require 'environment.php';
 $config = array();
 
 if(ENVIRONMENT == 'development'){
-    define("BASE_URL", "http://localhost:8080/UX-for-dengue/dataAnalysis/");
+    define("BASE_URL", "http://192.168.15.10:8080/UX-for-dengue/dataAnalysis/");
     $config['dbname'] = '';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';

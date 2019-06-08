@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:3000/";
-const BASE_URL = "http://localhost:8080/";
+const API_URL = "http://192.168.15.10:3000/";
+const BASE_URL = "http://192.168.15.10:8080/";
 
 
 $(function() {
@@ -203,7 +203,7 @@ function fillsReportResults(data){
         <div class="row mt-2 mb-3">
 
             <div class="col-12">
-                <button class="btn btn-primary btn-block">Enviar Diagnóstico</button>
+                <button class="btn fas fa-paper-plane btn-expert-decision btn-block btn-lg"> Enviar Diagnóstico</button>
             </div>  
 
         </div>`);
@@ -216,7 +216,7 @@ function fillsReportResults(data){
             </div> 
 
             <div class="col-6">
-                <button class="btn btn-primary btn-block">Enviar Diagnóstico</button>
+                <button class="btn btn-expert-validation btn-block">Enviar Diagnóstico</button>
             </div>  
 
         </div>`);
@@ -243,5 +243,6 @@ function clearAnalyticData(){
     $("#blood-pressure").val("");
     $("#current-date").val("");
     $("#current-time").val("");
+    $("#symptoms").html("");
 
 }

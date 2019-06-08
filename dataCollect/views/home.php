@@ -2,8 +2,22 @@
 	
 	<div class="row mt-5">
 
-		<div class="col-md-12">
-			<h1 class="text-center font-weight-light">Coleta de dados</h1>
+		<div class="col-3">
+			<i class="fas fa-address-card fa-4x"></i>
+			
+		</div>
+
+		<div class="col-9">
+			<h2 class="text-left font-weight-light mt-3">Coleta de dados</h2>
+		</div>
+		
+		<hr class="hr-user">
+	</div>
+
+	<div class="row mt-4">
+
+		<div class="col-12 text-left">
+			<a href="/Ux-for-dengue/"><i class="fas fa-home btn btn-collect btn-lg"></i></a>
 		</div>
 
 	</div>
@@ -18,7 +32,7 @@
 						text-left" >
 
 				<i class="fas fa-user fa-5x"></i>
-				<label>Usuário</label>
+				<label class="homeFont">Usuário</label>
 
 			</div>
 
@@ -36,7 +50,7 @@
 						text-left">
 
 				<i class="fas fa-user-nurse fa-5x"></i>
-				<label>Agente de Saúde</label>
+				<label class="homeFont">Agente de Saúde</label>
 
 			</div>
 
@@ -54,7 +68,7 @@
 						text-left">
 
 				<i class="fas fa-user-md fa-5x"></i>
-				<label>Especialista</label>
+				<label class="homeFont">Especialista</label>
 
 			</div>
 			

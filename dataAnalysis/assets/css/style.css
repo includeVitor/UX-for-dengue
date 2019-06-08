@@ -1,0 +1,35 @@
+
+.btn-analyze{
+    color: #fff;
+    background-color: 	#228B22;
+    border-color: 	#228B22;
+}
+
+.btn-expert-decision{
+    color: #fff;
+    background-color: #8FBC8F;
+    border-color: #8FBC8F;
+}
+
+.btn-expert-validation{
+    color: #fff;
+    background-color:  #3CB371;
+    border-color:  #3CB371;
+}
+
+.btn-pass-through{
+    color: #fff;
+    background-color:  #2E8B57;
+    border-color:  #2E8B57;
+}
+
+.homeFont{
+    font-size: 1.2em;
+    font-weight: 300 !important;
+}
+
+.hr-user{
+    width: 85%;
+    border: 2px solid gray;
+    border-radius: "5px";
+}

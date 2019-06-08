@@ -1,3 +1,16 @@
+
+.btn-collect{
+    color: #fff;
+    background-color: 	#4682B4;
+    border-color: 	#4682B4;
+}
+
+.btn-analyze{
+    color: #fff;
+    background-color: 	#228B22;
+    border-color: 	#228B22;
+}
+
 .btn-user{
     color: #fff;
     background-color: #87CEFA;
@@ -14,6 +27,11 @@
     color: #fff;
     background-color:  #1E90FF;
     border-color:  #1E90FF;
+}
+
+.homeFont{
+    font-size: 1.2em;
+    font-weight: 300 !important;
 }
 
 .hr-user{

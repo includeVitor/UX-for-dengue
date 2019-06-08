@@ -1,27 +1,36 @@
 <div class="container-fluid">
 
-    <div class="col-md-12 mt-2">
-        <h1 class="text-center font-weight-light">Validação do Especialista</h1>
+    <div class="row mt-3">
+        <div class="col-12 mt-2 text-center">
+            <h2 class="font-weight-light"> <i class="fas fa-chart-line"></i> Validação Especialista</h2>
+        </div>
+    </div>    
+    <hr class="hr-user">
+
+    <div class="row mt-4">
+        <div class="col-12 text-left">
+            <a href="/Ux-for-dengue/dataAnalysis/"><i class="fas fa-home btn btn-expert-validation btn-lg"></i></a>
+        </div>
     </div>
 
 
-    <ul class="nav nav-tabs mt-5" id="healthAgent" role="tablist">
+    <ul class="nav nav-tabs mt-5" id="specialistValidation" role="tablist">
 
         <li class="nav-item">
             <a class="nav-link active" id="initial-data-tab" data-toggle="tab" href="#initial-data" role="tab" aria-controls="initial-data" aria-selected="true">
-                Resultados do Relatório
+                <i class="fas fa-database"> Dados</i>
             </a>
         </li>
 
         <li class="nav-item">
             <a class="nav-link" id="helth-agent-report-tab" data-toggle="tab" href="#helth-agent-report" role="tab" aria-controls="helth-agent-report" aria-selected="false">
-                Dados analíticos
+                <i class="fas fa-question"> Perguntas</i>
             </a>
         </li>
 
     </ul>
 
-    <div class="tab-content" id="healthAgentContent">
+    <div class="tab-content" id="specialistValidationContent">
 
         <div class="tab-pane fade show active" id="initial-data" role="tabpanel" aria-labelledby="initial-data-tab">
        
@@ -73,9 +82,9 @@
                     </div>  
 
                     <div class="col-6" style="margin-top:33px">
-                        <button class="btn btn-info" type="button" id="search" >
+                        <button class="btn btn-expert-validation" type="button" id="search" >
                             <span id="Spinner"></span>
-                            <i class="fas fa-search"></i> Pesquisar
+                            <i class="fas fa-search "></i> Pesquisar
                         </button>
                     </div> 
 
@@ -191,6 +200,12 @@
                
                 </div>
 
+                <div class="row mt-3 mb-3">              
+                    <div class="col-12 text-right">
+                        <i id="next" class="fas fa-angle-right btn btn-expert-validation fa-2x"></i>
+                    </div>
+                </div>
+
             </form>
 
         </div>
@@ -258,8 +273,15 @@
               
             </div>  
 
+            <div class="row mt-3 mb-3">
+                <div class="col-2">
+                    <i id="back" class="fas fa-angle-left btn btn-expert-validation fa-2x"></i>
+                </div>
+            </div>  
+
         </div>
 
     </div>
 
 </div>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/decisions/specialist-validation.js"></script>

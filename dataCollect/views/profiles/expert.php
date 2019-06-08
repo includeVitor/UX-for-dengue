@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
     <div class="col-md-12 mt-2 text-center">
-        <h1 class="font-weight-light fas fa-address-card"> Análise Especialista</h1>
+        <h2 class="font-weight-light fas fa-address-card"> Análise Especialista</h2>
     </div>
     <hr class="hr-user">
 
@@ -97,7 +97,7 @@
                         </div>   
 
                         <div class="col-6">
-                            <label for="temperature">Temperatura</label>
+                            <label for="temperature">Temperatura*</label>
                             <input type="text" id="temperature" class="form-control text-right" maxlength="4" placeholder="Exemplo: 34 °C" required>
 
                             <div class="valid-feedback">
@@ -144,7 +144,7 @@
                     <div class="row mt-3 mb-3">
 
                         <div class="col-12">
-                            <label for="symptoms">Sintomas</label>
+                            <label for="symptoms">Sintomas*</label>
                             <textarea id="symptoms" class="form-control" rows="3" placeholder="Exemplo: Dor de cabeça" required></textarea>
 
                             <div class="valid-feedback">
