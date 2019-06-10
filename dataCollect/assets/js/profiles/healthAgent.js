@@ -74,7 +74,9 @@ const typeanalysis = 2; // Health Agent
             ).done(function(){
                 alert("dados enviados com sucesso");
                 window.location.href= `${BASE_URL}UX-for-dengue/dataCollect/`;
-            });
+            }).fail(function(){
+              alert("falhou");
+            })
 
           }
 

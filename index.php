@@ -15,7 +15,25 @@
 </head>
 <body>
     
-<div class="container-fluid" style="margin-top:45%">
+<div class="container-fluid"> 
+    <div class="row">
+        <a class="col-8" href="developers.php">
+
+            <div class="btn 
+                        btn-dark
+                        col-12
+                        text-left
+                        mt-5">
+
+                <i class="fas fa-code fa-2x"></i>
+                <label class="homeFont">Desenvolvedores</label>
+
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top:35%">
 
     <div class="row mt-3">
 
@@ -52,6 +70,9 @@
         </a>
 
     </div>
+
+
+    
 
 </div>   
 </body>

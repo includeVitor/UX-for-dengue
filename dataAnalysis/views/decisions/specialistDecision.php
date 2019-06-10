@@ -73,7 +73,7 @@
             <div class="row mt-3">
 
                 <div class="col-6">
-                    <label for="SUS_ID">Identificação</label>
+                    <label for="SUS_ID">Número da análise</label>
                     <input type="text" id="SUS_ID" class="form-control" maxlength="8">
                 </div>  
 
@@ -89,7 +89,7 @@
             <div class="row mt-3">
 
                 <div class="col-12">
-                    <label>Probabilidade de dengue comum</label>
+                    <label>Probabilidade de dengue comum: 15%</label>
                 </div>    
 
             </div>
@@ -97,7 +97,7 @@
             <div class="row mt-3">
 
                 <div class="col-12">
-                    <label>Probabilidade de dengue hemorragica</label>
+                    <label>Probabilidade de dengue hemorragica: 25%</label>
                 </div>    
 
             </div>

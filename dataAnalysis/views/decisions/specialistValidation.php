@@ -77,7 +77,7 @@
                 <div class="row mt-3">
 
                     <div class="col-6">
-                        <label for="SUS_ID">Identificação</label>
+                        <label for="SUS_ID">Número da Análise</label>
                         <input type="text" id="SUS_ID" class="form-control" maxlength="8">
                     </div>  
 

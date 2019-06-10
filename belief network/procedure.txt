@@ -1,0 +1,58 @@
+DELIMITER $$
+CREATE PROCEDURE probDengue(IN id_analyze INT, IN type INT)
+
+BEGIN
+	
+ 
+  SET @userProfile = 1;
+  SET @healthAgentProfile = 2;
+  SET @ExpertProfile = 3;
+  
+  SET QUEDA_ABRUPTA_DE_PLAQUETAS = 1;
+  SET HEPATOMEGALIA_DOLOROSA = 7;
+  SET DOR_ABDOMINAL_INTENSA_CONTINUA = 5;
+  SET DIMINUICAO_DA_DIURESE = 30;
+  SET HIPOTENSAO_POSTURAL = 15;
+  SET SONOLENCIA_E_OU_IRRITABILIDADE = 1;
+  SET HIPOTERMIA = 40;
+  SET COLETA_LIXO_PRECARIA = 35;
+  SET DESCONFORTO_RESPIRATORIO = 25;
+  SET AUM_REPENTINO_DO_HEMATOCRITO = 25;
+  SET VOMITOS_PERSISTENTES = 5;
+  SET LOCAIS_SEM_SANEAMENTO_ADEQUADO = 30;
+  
+  IF(type == @userProfile) 
+  	THEN
+    	DECLARE userProfileAnalyze 
+            CURSOR FOR 
+            	SELECT 
+                	question1,question2,question3
+                    FROM 
+                    	dengueanalysis d,
+                    	userProfile u
+                    WHERE 
+                    	d.userProfile = u.id
+                        AND d.id = id_analyze;
+        
+        DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;   
+        OPEN userProfileAnalyze
+        
+        	FETCH userProfileAnalyze INTO questions;
+            
+		CLOSE userProfileAnalyze;
+    	
+  END IF;
+  
+ 
+  
+  /*IF(type == @healthAgentProfile)
+  	THEN
+  END IF;
+  
+  IF(type == @ExpertProfile)
+  	THEN
+  END IF;*/
+       
+  
+END$$
+DELIMITER ;

@@ -130,7 +130,7 @@
 
                         <div class="col-6">
                             <label for="blood-pressure">Pressão Sanguínea*</label>
-                            <input type="text" id="blood-pressure" class="form-control text-right" maxlength="4" placeholder="Exemplo: 12" required>
+                            <input type="text" id="blood-pressure" class="form-control text-right" maxlength="4" placeholder="Exemplo: 12/7" required>
 
                             <div class="valid-feedback">
                                 Preenchido  

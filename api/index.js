@@ -169,18 +169,6 @@ router.post('/dengueAnalysis', (req, res) =>{
         additionInputValue += `${temperature},`;
     }
 
-    if(req.body.currentDate){
-        const currentDate = req.body.currentDate;
-        additionInputDescription += "CURRENTDATE,";
-        additionInputValue += `'${currentDate}',`;
-    }
-
-    if(req.body.currentTime){
-        const currentTime = req.body.currentTime;
-        additionInputDescription += "CURRENTTIME,";
-        additionInputValue += `'${currentTime}',`;
-    }
-
     if(req.body.heartBeat){
         const heartBeat = req.body.heartBeat;
         additionInputDescription += "HEARTBEAT,";
@@ -248,6 +236,12 @@ router.post('/dengueAnalysis', (req, res) =>{
               
             ${commaValue}${additionInputValue}
             )`, res);
+
+    /*execSQLQuery(
+      `INSERT INTO userdengue (SUS_ID, DENGUE)
+        SELECT ${SUS_ID}, MAX(ID) from dengueanalysis
+      `,res);*/
+
 });
 
 /**
