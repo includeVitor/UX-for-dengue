@@ -8,7 +8,7 @@
 		</div>
 
 		<div class="col-9">
-			<h2 class="text-left font-weight-light mt-3">Coleta de dados</h2>
+			<h2 class="text-left font-weight-light mt-3">Anamnese</h2>
 		</div>
 		
 		<hr class="hr-user">

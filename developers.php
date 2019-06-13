@@ -1,5 +1,5 @@
 <?php
-    define("BASE_URL", "http://192.168.15.10:8080/UX-for-dengue/dataCollect/");
+    define("BASE_URL", "http://localhost:8080/UX-for-dengue/dataCollect/");
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +30,12 @@
         </div>
     </div>
 
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h3 class="font-weight-lighter">Ítalo Colins Alves</h3>
+            <img src="<?php echo BASE_URL; ?>assets/images/italo.jpg".." class="rounded-circle mx-auto d-block img-thumbnail" width="150"  alt="...">
+        </div>
+    </div>
 
     <div class="row mt-5">
 
@@ -45,7 +51,7 @@
 
     </div>
 
-    <div class="row mt-5">
+    <div class="row mt-5 mb-5">
 
         <div class="col-6 text-center">
             <h3 class="font-weight-lighter">Camila Barcellos</h3>

@@ -1,5 +1,5 @@
 <?php
-    define("BASE_URL", "http://192.168.15.10:8080/UX-for-dengue/dataCollect/");
+    define("BASE_URL", "http://localhost:8080/UX-for-dengue/dataCollect/");
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
     
 <div class="container-fluid"> 
     <div class="row">
-        <a class="col-8" href="developers.php">
+        <a class="col-3 offset-9" href="developers.php">
 
             <div class="btn 
                         btn-dark
@@ -26,14 +26,14 @@
                         mt-5">
 
                 <i class="fas fa-code fa-2x"></i>
-                <label class="homeFont">Desenvolvedores</label>
+                <label class="homeFont"></label>
 
             </div>
         </a>
     </div>
 </div>
 
-<div class="container-fluid" style="margin-top:35%">
+<div class="container-fluid" style="margin-top:28%">
 
     <div class="row mt-3">
 
@@ -45,7 +45,7 @@
                         text-left" >
 
                 <i class="fas fa-address-card fa-5x"></i>
-                <label class="homeFont">Coleta de Dados</label>
+                <label class="homeFont">Anamnese</label>
 
             </div>
 
